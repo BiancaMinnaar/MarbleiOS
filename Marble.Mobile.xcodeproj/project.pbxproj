@@ -1,0 +1,497 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		588E2E83206BD5D0001C06E4 /* BaseProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588E2E82206BD5D0001C06E4 /* BaseProjectViewController.swift */; };
+		588E2E86206BD92B001C06E4 /* BaseProjectViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588E2E85206BD92B001C06E4 /* BaseProjectViewControllerProtocol.swift */; };
+		588E2E88206BD9FA001C06E4 /* BaseProjectModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588E2E87206BD9FA001C06E4 /* BaseProjectModel.swift */; };
+		588E2E8A206BDA9C001C06E4 /* BaseErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588E2E89206BDA9C001C06E4 /* BaseErrorModel.swift */; };
+		58F28193205FC70B00BF6022 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F28192205FC70B00BF6022 /* AppDelegate.swift */; };
+		58F28195205FC70B00BF6022 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F28194205FC70B00BF6022 /* ViewController.swift */; };
+		58F28198205FC70B00BF6022 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58F28196205FC70B00BF6022 /* Main.storyboard */; };
+		58F2819A205FC70B00BF6022 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58F28199205FC70B00BF6022 /* Assets.xcassets */; };
+		58F2819D205FC70B00BF6022 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58F2819B205FC70B00BF6022 /* LaunchScreen.storyboard */; };
+		58F281A8205FC70B00BF6022 /* Marble_MobileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F281A7205FC70B00BF6022 /* Marble_MobileTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		58F281A4205FC70B00BF6022 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 58F28187205FC70B00BF6022 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 58F2818E205FC70B00BF6022;
+			remoteInfo = Marble.Mobile;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		588E2E82206BD5D0001C06E4 /* BaseProjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseProjectViewController.swift; sourceTree = "<group>"; };
+		588E2E85206BD92B001C06E4 /* BaseProjectViewControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseProjectViewControllerProtocol.swift; sourceTree = "<group>"; };
+		588E2E87206BD9FA001C06E4 /* BaseProjectModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseProjectModel.swift; sourceTree = "<group>"; };
+		588E2E89206BDA9C001C06E4 /* BaseErrorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseErrorModel.swift; sourceTree = "<group>"; };
+		58F2818F205FC70B00BF6022 /* Marble.Mobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Marble.Mobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		58F28192205FC70B00BF6022 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		58F28194205FC70B00BF6022 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		58F28197205FC70B00BF6022 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		58F28199205FC70B00BF6022 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		58F2819C205FC70B00BF6022 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		58F2819E205FC70B00BF6022 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58F281A3205FC70B00BF6022 /* Marble.MobileTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Marble.MobileTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		58F281A7205FC70B00BF6022 /* Marble_MobileTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Marble_MobileTests.swift; sourceTree = "<group>"; };
+		58F281A9205FC70B00BF6022 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		58F2818C205FC70B00BF6022 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58F281A0205FC70B00BF6022 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		588E2E7F206BD41C001C06E4 /* ViewControler */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewControler;
+			sourceTree = "<group>";
+		};
+		588E2E80206BD51B001C06E4 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		588E2E81206BD532001C06E4 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				588E2E84206BD8BC001C06E4 /* Implementation */,
+				588E2E85206BD92B001C06E4 /* BaseProjectViewControllerProtocol.swift */,
+				588E2E87206BD9FA001C06E4 /* BaseProjectModel.swift */,
+				588E2E89206BDA9C001C06E4 /* BaseErrorModel.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		588E2E84206BD8BC001C06E4 /* Implementation */ = {
+			isa = PBXGroup;
+			children = (
+				588E2E82206BD5D0001C06E4 /* BaseProjectViewController.swift */,
+			);
+			path = Implementation;
+			sourceTree = "<group>";
+		};
+		58F28186205FC70B00BF6022 = {
+			isa = PBXGroup;
+			children = (
+				58F28191205FC70B00BF6022 /* Marble.Mobile */,
+				58F281A6205FC70B00BF6022 /* Marble.MobileTests */,
+				58F28190205FC70B00BF6022 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		58F28190205FC70B00BF6022 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				58F2818F205FC70B00BF6022 /* Marble.Mobile.app */,
+				58F281A3205FC70B00BF6022 /* Marble.MobileTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		58F28191205FC70B00BF6022 /* Marble.Mobile */ = {
+			isa = PBXGroup;
+			children = (
+				588E2E81206BD532001C06E4 /* Base */,
+				588E2E80206BD51B001C06E4 /* Repository */,
+				588E2E7F206BD41C001C06E4 /* ViewControler */,
+				58F28192205FC70B00BF6022 /* AppDelegate.swift */,
+				58F28194205FC70B00BF6022 /* ViewController.swift */,
+				58F28196205FC70B00BF6022 /* Main.storyboard */,
+				58F28199205FC70B00BF6022 /* Assets.xcassets */,
+				58F2819B205FC70B00BF6022 /* LaunchScreen.storyboard */,
+				58F2819E205FC70B00BF6022 /* Info.plist */,
+			);
+			path = Marble.Mobile;
+			sourceTree = "<group>";
+		};
+		58F281A6205FC70B00BF6022 /* Marble.MobileTests */ = {
+			isa = PBXGroup;
+			children = (
+				58F281A7205FC70B00BF6022 /* Marble_MobileTests.swift */,
+				58F281A9205FC70B00BF6022 /* Info.plist */,
+			);
+			path = Marble.MobileTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		58F2818E205FC70B00BF6022 /* Marble.Mobile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58F281AC205FC70B00BF6022 /* Build configuration list for PBXNativeTarget "Marble.Mobile" */;
+			buildPhases = (
+				58F2818B205FC70B00BF6022 /* Sources */,
+				58F2818C205FC70B00BF6022 /* Frameworks */,
+				58F2818D205FC70B00BF6022 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Marble.Mobile;
+			productName = Marble.Mobile;
+			productReference = 58F2818F205FC70B00BF6022 /* Marble.Mobile.app */;
+			productType = "com.apple.product-type.application";
+		};
+		58F281A2205FC70B00BF6022 /* Marble.MobileTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58F281AF205FC70B00BF6022 /* Build configuration list for PBXNativeTarget "Marble.MobileTests" */;
+			buildPhases = (
+				58F2819F205FC70B00BF6022 /* Sources */,
+				58F281A0205FC70B00BF6022 /* Frameworks */,
+				58F281A1205FC70B00BF6022 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				58F281A5205FC70B00BF6022 /* PBXTargetDependency */,
+			);
+			name = Marble.MobileTests;
+			productName = Marble.MobileTests;
+			productReference = 58F281A3205FC70B00BF6022 /* Marble.MobileTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		58F28187205FC70B00BF6022 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = MarbleTech;
+				TargetAttributes = {
+					58F2818E205FC70B00BF6022 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					58F281A2205FC70B00BF6022 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 58F2818E205FC70B00BF6022;
+					};
+				};
+			};
+			buildConfigurationList = 58F2818A205FC70B00BF6022 /* Build configuration list for PBXProject "Marble.Mobile" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 58F28186205FC70B00BF6022;
+			productRefGroup = 58F28190205FC70B00BF6022 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				58F2818E205FC70B00BF6022 /* Marble.Mobile */,
+				58F281A2205FC70B00BF6022 /* Marble.MobileTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		58F2818D205FC70B00BF6022 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58F2819D205FC70B00BF6022 /* LaunchScreen.storyboard in Resources */,
+				58F2819A205FC70B00BF6022 /* Assets.xcassets in Resources */,
+				58F28198205FC70B00BF6022 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58F281A1205FC70B00BF6022 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		58F2818B205FC70B00BF6022 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58F28195205FC70B00BF6022 /* ViewController.swift in Sources */,
+				588E2E88206BD9FA001C06E4 /* BaseProjectModel.swift in Sources */,
+				588E2E86206BD92B001C06E4 /* BaseProjectViewControllerProtocol.swift in Sources */,
+				588E2E83206BD5D0001C06E4 /* BaseProjectViewController.swift in Sources */,
+				58F28193205FC70B00BF6022 /* AppDelegate.swift in Sources */,
+				588E2E8A206BDA9C001C06E4 /* BaseErrorModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58F2819F205FC70B00BF6022 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58F281A8205FC70B00BF6022 /* Marble_MobileTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		58F281A5205FC70B00BF6022 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 58F2818E205FC70B00BF6022 /* Marble.Mobile */;
+			targetProxy = 58F281A4205FC70B00BF6022 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		58F28196205FC70B00BF6022 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				58F28197205FC70B00BF6022 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		58F2819B205FC70B00BF6022 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				58F2819C205FC70B00BF6022 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		58F281AA205FC70B00BF6022 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		58F281AB205FC70B00BF6022 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		58F281AD205FC70B00BF6022 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QDN3556952;
+				INFOPLIST_FILE = Marble.Mobile/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "MarbleTech.Marble-Mobile";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		58F281AE205FC70B00BF6022 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QDN3556952;
+				INFOPLIST_FILE = Marble.Mobile/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "MarbleTech.Marble-Mobile";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		58F281B0205FC70B00BF6022 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QDN3556952;
+				INFOPLIST_FILE = Marble.MobileTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "MarbleTech.Marble-MobileTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Marble.Mobile.app/Marble.Mobile";
+			};
+			name = Debug;
+		};
+		58F281B1205FC70B00BF6022 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QDN3556952;
+				INFOPLIST_FILE = Marble.MobileTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "MarbleTech.Marble-MobileTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Marble.Mobile.app/Marble.Mobile";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		58F2818A205FC70B00BF6022 /* Build configuration list for PBXProject "Marble.Mobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58F281AA205FC70B00BF6022 /* Debug */,
+				58F281AB205FC70B00BF6022 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		58F281AC205FC70B00BF6022 /* Build configuration list for PBXNativeTarget "Marble.Mobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58F281AD205FC70B00BF6022 /* Debug */,
+				58F281AE205FC70B00BF6022 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		58F281AF205FC70B00BF6022 /* Build configuration list for PBXNativeTarget "Marble.MobileTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58F281B0205FC70B00BF6022 /* Debug */,
+				58F281B1205FC70B00BF6022 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 58F28187205FC70B00BF6022 /* Project object */;
+}
