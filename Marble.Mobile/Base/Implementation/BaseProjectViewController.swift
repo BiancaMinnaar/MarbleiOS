@@ -10,5 +10,9 @@ import Foundation
 
 class BaseProjectViewController
 {
+    let _masterRepo: MasterRepositoryProtocol
     
+    init() {
+        _masterRepo = MasterRepository()
+    }
 }

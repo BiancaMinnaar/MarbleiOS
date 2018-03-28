@@ -11,6 +11,11 @@
 		588E2E86206BD92B001C06E4 /* BaseProjectViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588E2E85206BD92B001C06E4 /* BaseProjectViewControllerProtocol.swift */; };
 		588E2E88206BD9FA001C06E4 /* BaseProjectModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588E2E87206BD9FA001C06E4 /* BaseProjectModel.swift */; };
 		588E2E8A206BDA9C001C06E4 /* BaseErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588E2E89206BDA9C001C06E4 /* BaseErrorModel.swift */; };
+		588E2E8D206BF93E001C06E4 /* MasterRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588E2E8C206BF93E001C06E4 /* MasterRepository.swift */; };
+		588E2E8F206BF9BE001C06E4 /* MasterRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588E2E8E206BF9BE001C06E4 /* MasterRepositoryProtocol.swift */; };
+		588E2E91206C007C001C06E4 /* BrokenRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588E2E90206C007C001C06E4 /* BrokenRule.swift */; };
+		588E2E93206C3E28001C06E4 /* NetworkIntegrationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588E2E92206C3E28001C06E4 /* NetworkIntegrationProtocol.swift */; };
+		588E2E96206C47E5001C06E4 /* MasterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588E2E95206C47E5001C06E4 /* MasterViewModel.swift */; };
 		58F28193205FC70B00BF6022 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F28192205FC70B00BF6022 /* AppDelegate.swift */; };
 		58F28195205FC70B00BF6022 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F28194205FC70B00BF6022 /* ViewController.swift */; };
 		58F28198205FC70B00BF6022 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58F28196205FC70B00BF6022 /* Main.storyboard */; };
@@ -34,6 +39,11 @@
 		588E2E85206BD92B001C06E4 /* BaseProjectViewControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseProjectViewControllerProtocol.swift; sourceTree = "<group>"; };
 		588E2E87206BD9FA001C06E4 /* BaseProjectModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseProjectModel.swift; sourceTree = "<group>"; };
 		588E2E89206BDA9C001C06E4 /* BaseErrorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseErrorModel.swift; sourceTree = "<group>"; };
+		588E2E8C206BF93E001C06E4 /* MasterRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterRepository.swift; sourceTree = "<group>"; };
+		588E2E8E206BF9BE001C06E4 /* MasterRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterRepositoryProtocol.swift; sourceTree = "<group>"; };
+		588E2E90206C007C001C06E4 /* BrokenRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrokenRule.swift; sourceTree = "<group>"; };
+		588E2E92206C3E28001C06E4 /* NetworkIntegrationProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkIntegrationProtocol.swift; sourceTree = "<group>"; };
+		588E2E95206C47E5001C06E4 /* MasterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewModel.swift; sourceTree = "<group>"; };
 		58F2818F205FC70B00BF6022 /* Marble.Mobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Marble.Mobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58F28192205FC70B00BF6022 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		58F28194205FC70B00BF6022 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -74,6 +84,9 @@
 		588E2E80206BD51B001C06E4 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
+				588E2E8E206BF9BE001C06E4 /* MasterRepositoryProtocol.swift */,
+				588E2E8B206BF923001C06E4 /* Implementation */,
+				588E2E92206C3E28001C06E4 /* NetworkIntegrationProtocol.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -83,8 +96,7 @@
 			children = (
 				588E2E84206BD8BC001C06E4 /* Implementation */,
 				588E2E85206BD92B001C06E4 /* BaseProjectViewControllerProtocol.swift */,
-				588E2E87206BD9FA001C06E4 /* BaseProjectModel.swift */,
-				588E2E89206BDA9C001C06E4 /* BaseErrorModel.swift */,
+				588E2E90206C007C001C06E4 /* BrokenRule.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -92,9 +104,27 @@
 		588E2E84206BD8BC001C06E4 /* Implementation */ = {
 			isa = PBXGroup;
 			children = (
+				588E2E87206BD9FA001C06E4 /* BaseProjectModel.swift */,
+				588E2E89206BDA9C001C06E4 /* BaseErrorModel.swift */,
 				588E2E82206BD5D0001C06E4 /* BaseProjectViewController.swift */,
 			);
 			path = Implementation;
+			sourceTree = "<group>";
+		};
+		588E2E8B206BF923001C06E4 /* Implementation */ = {
+			isa = PBXGroup;
+			children = (
+				588E2E8C206BF93E001C06E4 /* MasterRepository.swift */,
+			);
+			path = Implementation;
+			sourceTree = "<group>";
+		};
+		588E2E94206C47C9001C06E4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				588E2E95206C47E5001C06E4 /* MasterViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		58F28186205FC70B00BF6022 = {
@@ -118,6 +148,7 @@
 		58F28191205FC70B00BF6022 /* Marble.Mobile */ = {
 			isa = PBXGroup;
 			children = (
+				588E2E94206C47C9001C06E4 /* ViewModel */,
 				588E2E81206BD532001C06E4 /* Base */,
 				588E2E80206BD51B001C06E4 /* Repository */,
 				588E2E7F206BD41C001C06E4 /* ViewControler */,
@@ -243,12 +274,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				588E2E91206C007C001C06E4 /* BrokenRule.swift in Sources */,
 				58F28195205FC70B00BF6022 /* ViewController.swift in Sources */,
+				588E2E93206C3E28001C06E4 /* NetworkIntegrationProtocol.swift in Sources */,
 				588E2E88206BD9FA001C06E4 /* BaseProjectModel.swift in Sources */,
+				588E2E8D206BF93E001C06E4 /* MasterRepository.swift in Sources */,
 				588E2E86206BD92B001C06E4 /* BaseProjectViewControllerProtocol.swift in Sources */,
 				588E2E83206BD5D0001C06E4 /* BaseProjectViewController.swift in Sources */,
+				588E2E96206C47E5001C06E4 /* MasterViewModel.swift in Sources */,
 				58F28193205FC70B00BF6022 /* AppDelegate.swift in Sources */,
 				588E2E8A206BDA9C001C06E4 /* BaseErrorModel.swift in Sources */,
+				588E2E8F206BF9BE001C06E4 /* MasterRepositoryProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
