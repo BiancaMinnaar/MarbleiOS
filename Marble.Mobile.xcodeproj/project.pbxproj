@@ -13,6 +13,8 @@
 		58099073206CE3C8003B5BE2 /* NetworkCallEventArgs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58099072206CE3C8003B5BE2 /* NetworkCallEventArgs.swift */; };
 		58099077206CEE3B003B5BE2 /* NetworkIntegrationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58099076206CEE3B003B5BE2 /* NetworkIntegrationRepository.swift */; };
 		58099079206CEED4003B5BE2 /* BaseProjectRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58099078206CEED4003B5BE2 /* BaseProjectRepository.swift */; };
+		5809907D206CF780003B5BE2 /* RestServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5809907C206CF780003B5BE2 /* RestServiceProtocol.swift */; };
+		58099080206D0138003B5BE2 /* BaseNetworkAccessEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5809907F206D0138003B5BE2 /* BaseNetworkAccessEnum.swift */; };
 		588E2E83206BD5D0001C06E4 /* BaseProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588E2E82206BD5D0001C06E4 /* BaseProjectViewController.swift */; };
 		588E2E86206BD92B001C06E4 /* BaseProjectViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588E2E85206BD92B001C06E4 /* BaseProjectViewControllerProtocol.swift */; };
 		588E2E88206BD9FA001C06E4 /* BaseProjectModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588E2E87206BD9FA001C06E4 /* BaseProjectModel.swift */; };
@@ -47,6 +49,8 @@
 		58099072206CE3C8003B5BE2 /* NetworkCallEventArgs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkCallEventArgs.swift; sourceTree = "<group>"; };
 		58099076206CEE3B003B5BE2 /* NetworkIntegrationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkIntegrationRepository.swift; sourceTree = "<group>"; };
 		58099078206CEED4003B5BE2 /* BaseProjectRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseProjectRepository.swift; sourceTree = "<group>"; };
+		5809907C206CF780003B5BE2 /* RestServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestServiceProtocol.swift; sourceTree = "<group>"; };
+		5809907F206D0138003B5BE2 /* BaseNetworkAccessEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNetworkAccessEnum.swift; sourceTree = "<group>"; };
 		588E2E82206BD5D0001C06E4 /* BaseProjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseProjectViewController.swift; sourceTree = "<group>"; };
 		588E2E85206BD92B001C06E4 /* BaseProjectViewControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseProjectViewControllerProtocol.swift; sourceTree = "<group>"; };
 		588E2E87206BD9FA001C06E4 /* BaseProjectModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseProjectModel.swift; sourceTree = "<group>"; };
@@ -92,6 +96,31 @@
 				5809906B206CD31B003B5BE2 /* RegistrationViewController.swift */,
 			);
 			path = Implementation;
+			sourceTree = "<group>";
+		};
+		5809907A206CF6CD003B5BE2 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				5809907B206CF6DA003B5BE2 /* Implementation */,
+				5809907C206CF780003B5BE2 /* RestServiceProtocol.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		5809907B206CF6DA003B5BE2 /* Implementation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Implementation;
+			sourceTree = "<group>";
+		};
+		5809907E206D011F003B5BE2 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				58099072206CE3C8003B5BE2 /* NetworkCallEventArgs.swift */,
+				5809907F206D0138003B5BE2 /* BaseNetworkAccessEnum.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 		588E2E7F206BD41C001C06E4 /* ViewControler */ = {
@@ -148,7 +177,6 @@
 			children = (
 				588E2E95206C47E5001C06E4 /* MasterViewModel.swift */,
 				58099070206CD5D9003B5BE2 /* UserViewModel.swift */,
-				58099072206CE3C8003B5BE2 /* NetworkCallEventArgs.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -174,6 +202,8 @@
 		58F28191205FC70B00BF6022 /* Marble.Mobile */ = {
 			isa = PBXGroup;
 			children = (
+				5809907E206D011F003B5BE2 /* Data */,
+				5809907A206CF6CD003B5BE2 /* Service */,
 				588E2E94206C47C9001C06E4 /* ViewModel */,
 				588E2E81206BD532001C06E4 /* Base */,
 				588E2E80206BD51B001C06E4 /* Repository */,
@@ -303,6 +333,7 @@
 				588E2E91206C007C001C06E4 /* BrokenRule.swift in Sources */,
 				58F28195205FC70B00BF6022 /* ViewController.swift in Sources */,
 				58099079206CEED4003B5BE2 /* BaseProjectRepository.swift in Sources */,
+				58099080206D0138003B5BE2 /* BaseNetworkAccessEnum.swift in Sources */,
 				588E2E93206C3E28001C06E4 /* NetworkIntegrationRepositoryProtocol.swift in Sources */,
 				588E2E88206BD9FA001C06E4 /* BaseProjectModel.swift in Sources */,
 				588E2E8D206BF93E001C06E4 /* MasterRepository.swift in Sources */,
@@ -315,6 +346,7 @@
 				58F28193205FC70B00BF6022 /* AppDelegate.swift in Sources */,
 				588E2E8A206BDA9C001C06E4 /* BaseErrorModel.swift in Sources */,
 				58099073206CE3C8003B5BE2 /* NetworkCallEventArgs.swift in Sources */,
+				5809907D206CF780003B5BE2 /* RestServiceProtocol.swift in Sources */,
 				5809906F206CD401003B5BE2 /* RegistrationViewControllerProtocol.swift in Sources */,
 				588E2E8F206BF9BE001C06E4 /* MasterRepositoryProtocol.swift in Sources */,
 			);
