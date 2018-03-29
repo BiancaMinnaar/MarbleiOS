@@ -8,6 +8,6 @@
 
 import Foundation
 
-protocol NetworkIntegrationProtocol {
-     
+protocol NetworkIntegrationRepositoryProtocol {
+    var NetworkInteractionSucceeded: (NetworkCallEventArgs) -> Void {get set}
 }

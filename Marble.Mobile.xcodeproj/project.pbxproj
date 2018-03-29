@@ -10,6 +10,9 @@
 		5809906C206CD31B003B5BE2 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5809906B206CD31B003B5BE2 /* RegistrationViewController.swift */; };
 		5809906F206CD401003B5BE2 /* RegistrationViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5809906E206CD401003B5BE2 /* RegistrationViewControllerProtocol.swift */; };
 		58099071206CD5D9003B5BE2 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58099070206CD5D9003B5BE2 /* UserViewModel.swift */; };
+		58099073206CE3C8003B5BE2 /* NetworkCallEventArgs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58099072206CE3C8003B5BE2 /* NetworkCallEventArgs.swift */; };
+		58099077206CEE3B003B5BE2 /* NetworkIntegrationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58099076206CEE3B003B5BE2 /* NetworkIntegrationRepository.swift */; };
+		58099079206CEED4003B5BE2 /* BaseProjectRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58099078206CEED4003B5BE2 /* BaseProjectRepository.swift */; };
 		588E2E83206BD5D0001C06E4 /* BaseProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588E2E82206BD5D0001C06E4 /* BaseProjectViewController.swift */; };
 		588E2E86206BD92B001C06E4 /* BaseProjectViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588E2E85206BD92B001C06E4 /* BaseProjectViewControllerProtocol.swift */; };
 		588E2E88206BD9FA001C06E4 /* BaseProjectModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588E2E87206BD9FA001C06E4 /* BaseProjectModel.swift */; };
@@ -17,7 +20,7 @@
 		588E2E8D206BF93E001C06E4 /* MasterRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588E2E8C206BF93E001C06E4 /* MasterRepository.swift */; };
 		588E2E8F206BF9BE001C06E4 /* MasterRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588E2E8E206BF9BE001C06E4 /* MasterRepositoryProtocol.swift */; };
 		588E2E91206C007C001C06E4 /* BrokenRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588E2E90206C007C001C06E4 /* BrokenRule.swift */; };
-		588E2E93206C3E28001C06E4 /* NetworkIntegrationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588E2E92206C3E28001C06E4 /* NetworkIntegrationProtocol.swift */; };
+		588E2E93206C3E28001C06E4 /* NetworkIntegrationRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588E2E92206C3E28001C06E4 /* NetworkIntegrationRepositoryProtocol.swift */; };
 		588E2E96206C47E5001C06E4 /* MasterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588E2E95206C47E5001C06E4 /* MasterViewModel.swift */; };
 		58F28193205FC70B00BF6022 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F28192205FC70B00BF6022 /* AppDelegate.swift */; };
 		58F28195205FC70B00BF6022 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F28194205FC70B00BF6022 /* ViewController.swift */; };
@@ -41,6 +44,9 @@
 		5809906B206CD31B003B5BE2 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		5809906E206CD401003B5BE2 /* RegistrationViewControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewControllerProtocol.swift; sourceTree = "<group>"; };
 		58099070206CD5D9003B5BE2 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		58099072206CE3C8003B5BE2 /* NetworkCallEventArgs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkCallEventArgs.swift; sourceTree = "<group>"; };
+		58099076206CEE3B003B5BE2 /* NetworkIntegrationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkIntegrationRepository.swift; sourceTree = "<group>"; };
+		58099078206CEED4003B5BE2 /* BaseProjectRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseProjectRepository.swift; sourceTree = "<group>"; };
 		588E2E82206BD5D0001C06E4 /* BaseProjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseProjectViewController.swift; sourceTree = "<group>"; };
 		588E2E85206BD92B001C06E4 /* BaseProjectViewControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseProjectViewControllerProtocol.swift; sourceTree = "<group>"; };
 		588E2E87206BD9FA001C06E4 /* BaseProjectModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseProjectModel.swift; sourceTree = "<group>"; };
@@ -48,7 +54,7 @@
 		588E2E8C206BF93E001C06E4 /* MasterRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterRepository.swift; sourceTree = "<group>"; };
 		588E2E8E206BF9BE001C06E4 /* MasterRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterRepositoryProtocol.swift; sourceTree = "<group>"; };
 		588E2E90206C007C001C06E4 /* BrokenRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrokenRule.swift; sourceTree = "<group>"; };
-		588E2E92206C3E28001C06E4 /* NetworkIntegrationProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkIntegrationProtocol.swift; sourceTree = "<group>"; };
+		588E2E92206C3E28001C06E4 /* NetworkIntegrationRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkIntegrationRepositoryProtocol.swift; sourceTree = "<group>"; };
 		588E2E95206C47E5001C06E4 /* MasterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewModel.swift; sourceTree = "<group>"; };
 		58F2818F205FC70B00BF6022 /* Marble.Mobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Marble.Mobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58F28192205FC70B00BF6022 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -102,7 +108,7 @@
 			children = (
 				588E2E8E206BF9BE001C06E4 /* MasterRepositoryProtocol.swift */,
 				588E2E8B206BF923001C06E4 /* Implementation */,
-				588E2E92206C3E28001C06E4 /* NetworkIntegrationProtocol.swift */,
+				588E2E92206C3E28001C06E4 /* NetworkIntegrationRepositoryProtocol.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -123,6 +129,7 @@
 				588E2E87206BD9FA001C06E4 /* BaseProjectModel.swift */,
 				588E2E89206BDA9C001C06E4 /* BaseErrorModel.swift */,
 				588E2E82206BD5D0001C06E4 /* BaseProjectViewController.swift */,
+				58099078206CEED4003B5BE2 /* BaseProjectRepository.swift */,
 			);
 			path = Implementation;
 			sourceTree = "<group>";
@@ -131,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				588E2E8C206BF93E001C06E4 /* MasterRepository.swift */,
+				58099076206CEE3B003B5BE2 /* NetworkIntegrationRepository.swift */,
 			);
 			path = Implementation;
 			sourceTree = "<group>";
@@ -140,6 +148,7 @@
 			children = (
 				588E2E95206C47E5001C06E4 /* MasterViewModel.swift */,
 				58099070206CD5D9003B5BE2 /* UserViewModel.swift */,
+				58099072206CE3C8003B5BE2 /* NetworkCallEventArgs.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -293,16 +302,19 @@
 			files = (
 				588E2E91206C007C001C06E4 /* BrokenRule.swift in Sources */,
 				58F28195205FC70B00BF6022 /* ViewController.swift in Sources */,
-				588E2E93206C3E28001C06E4 /* NetworkIntegrationProtocol.swift in Sources */,
+				58099079206CEED4003B5BE2 /* BaseProjectRepository.swift in Sources */,
+				588E2E93206C3E28001C06E4 /* NetworkIntegrationRepositoryProtocol.swift in Sources */,
 				588E2E88206BD9FA001C06E4 /* BaseProjectModel.swift in Sources */,
 				588E2E8D206BF93E001C06E4 /* MasterRepository.swift in Sources */,
 				58099071206CD5D9003B5BE2 /* UserViewModel.swift in Sources */,
 				588E2E86206BD92B001C06E4 /* BaseProjectViewControllerProtocol.swift in Sources */,
+				58099077206CEE3B003B5BE2 /* NetworkIntegrationRepository.swift in Sources */,
 				5809906C206CD31B003B5BE2 /* RegistrationViewController.swift in Sources */,
 				588E2E83206BD5D0001C06E4 /* BaseProjectViewController.swift in Sources */,
 				588E2E96206C47E5001C06E4 /* MasterViewModel.swift in Sources */,
 				58F28193205FC70B00BF6022 /* AppDelegate.swift in Sources */,
 				588E2E8A206BDA9C001C06E4 /* BaseErrorModel.swift in Sources */,
+				58099073206CE3C8003B5BE2 /* NetworkCallEventArgs.swift in Sources */,
 				5809906F206CD401003B5BE2 /* RegistrationViewControllerProtocol.swift in Sources */,
 				588E2E8F206BF9BE001C06E4 /* MasterRepositoryProtocol.swift in Sources */,
 			);

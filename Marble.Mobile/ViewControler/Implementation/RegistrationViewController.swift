@@ -7,3 +7,11 @@
 //
 
 import Foundation
+
+class RegistrationViewController: RegistrationViewControllerProtocol {
+    func register(with userDetails: UserViewModel) {
+        
+    }
+    
+    
+}
