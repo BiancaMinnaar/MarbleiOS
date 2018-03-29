@@ -8,6 +8,11 @@
 
 import Foundation
 
-class NetworkIntegrationRepository: BaseProjectRepository {
+class NetworkIntegrationRepository: BaseProjectRepository, NetworkIntegrationRepositoryProtocol {
+    var NetworkCallInitialised: (() -> Void)?
     
+    var NetworkCallCompleted: (() -> Void)?
+    
+    var NetworkInteractionSucceeded: ((NetworkCallEventArgs) -> Void)?
+    var NetworkInteractionFailed: ((NetworkCallEventArgs) -> Void)?
 }

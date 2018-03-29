@@ -9,5 +9,8 @@
 import Foundation
 
 protocol NetworkIntegrationRepositoryProtocol {
-    var NetworkInteractionSucceeded: (NetworkCallEventArgs) -> Void {get set}
+    var NetworkInteractionSucceeded: ((NetworkCallEventArgs) -> Void)? {get set}
+    var NetworkInteractionFailed: ((NetworkCallEventArgs) -> Void)? {get set}
+    var NetworkCallInitialised: (()->Void)? {get set}
+    var NetworkCallCompleted: (()->Void)? {get set}
 }
