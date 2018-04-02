@@ -22,6 +22,6 @@ class NetworkIntegrationRepository: BaseProjectRepository, NetworkIntegrationRep
     }
     
     func ExecuteNetworkRequest(urlExtension: String, parameterCollection: Dictionary<String, AnyObject>, networkAccessEnum: BaseNetworkAccessEnum, closure: (() -> Void)?) {
-        
+        _RestService.ExecuteNetworkRequest(urlExtension: urlExtension, parameterCollection: parameterCollection, networkAccessEnum: networkAccessEnum, closure: closure)
     }
 }
