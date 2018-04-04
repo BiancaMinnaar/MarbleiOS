@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol NetworkIntegrationProtocol {
+protocol NetworkInteractionProtocol {
     func getNetworkRequest(urlExtension:String, httpMethod:BaseNetworkAccessEnum) -> NetworkRequestProtocol
     func getNetworkRequestForJson(urlExtension:String, httpMethod:BaseNetworkAccessEnum) -> NetworkRequestProtocol
     func executeRequest(request:NetworkRequestProtocol) -> NetworkResponseProtocol
