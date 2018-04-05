@@ -10,8 +10,7 @@ import Foundation
 
 protocol NetworkResponseProtocol {
     var statusDescription:String{get}
-    var content:String{get}
-    var RawBytes:[UInt8]{get}
+    var content:[String: AnyObject]{get}
 }
 
 protocol NetworkResponseWithBodyProtocol : NetworkResponseProtocol {

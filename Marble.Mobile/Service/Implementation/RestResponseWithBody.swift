@@ -8,16 +8,14 @@
 
 import Foundation
 
-class RestResponseWithBody<A:BaseProjectModel>: NetworkResponseWithBodyProtocol {
-    var body: A 
-    var statusDescription: String
-    var content: String
-    var RawBytes: [UInt8]
+class RestResponseWithBody<A:BaseProjectModel>: RestResponse, NetworkResponseWithBodyProtocol {
+    var body: A
     
     init(response: NetworkResponseProtocol, data: A) {
+        self.body = data
+        super.init(response: response)
         self.statusDescription = response.statusDescription
         self.content = response.content
-        self.RawBytes = response.RawBytes
-        self.body = data
+        
     }
 }

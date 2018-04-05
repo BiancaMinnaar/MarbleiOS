@@ -39,10 +39,24 @@ class RestInteraction: NetworkInteractionProtocol {
     func executeRequest(request: NetworkRequestProtocol) -> NetworkResponseProtocol {
         let parms = request.parameters
         let method = getMethod(networkAccessMethod: request.methodType)
+        var rResponse: NetworkResponseProtocol = AnyObject.self as! NetworkResponseProtocol
         Alamofire.request(constructURL(with: request.networkExtention), method:method, parameters:parms, encoding: JSONEncoding.default).responseJSON(completionHandler: ({ (response) in
+            guard response.result.isSuccess else {
+                print("Network Error: \(String(describing: response.result.error))")
+                //errorHandler
+                return
+            }
             
+            guard let jsonString = response.result.value as? [String: AnyObject] else{
+                print("Malformed data received from service")
+                //ErrorHandler
+                return
+            }
+            
+            //let userDate = UserLoginResult(withJSONData: userJSON as AnyObject )
+            rResponse = RestResponse(status: "Success", content: jsonString)
         }))
-            return AnyObject.self as! NetworkResponseProtocol
+        return rResponse
     }
     
     func executeRequest<A:NetworkResponseWithBodyProtocol>(responseModel: A, request: NetworkRequestProtocol) -> A.returnModel {

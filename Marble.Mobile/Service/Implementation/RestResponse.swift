@@ -10,12 +10,15 @@ import Foundation
 
 class RestResponse: NetworkResponseProtocol {
     var statusDescription: String
-    var content: String
-    var RawBytes: [UInt8]
+    var content: [String: AnyObject]
     
     init(response: NetworkResponseProtocol) {
         self.statusDescription = response.statusDescription
         self.content = response.content
-        self.RawBytes = response.RawBytes
+    }
+    
+    init(status:String, content:[String: AnyObject]) {
+        self.statusDescription = status
+        self.content = content
     }
 }
