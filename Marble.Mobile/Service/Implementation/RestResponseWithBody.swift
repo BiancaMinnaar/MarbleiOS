@@ -9,15 +9,15 @@
 import Foundation
 
 class RestResponseWithBody<A:BaseProjectModel>: NetworkResponseWithBodyProtocol {
-    var body: A
+    var body: A 
     var statusDescription: String
     var content: String
     var RawBytes: [UInt8]
     
-    init(status:String, content:String, rawBytes:[UInt8], body:A) {
-        self.statusDescription = status
-        self.content = content
-        self.RawBytes = rawBytes
-        self.body = body
+    init(response: NetworkResponseProtocol, data: A) {
+        self.statusDescription = response.statusDescription
+        self.content = response.content
+        self.RawBytes = response.RawBytes
+        self.body = data
     }
 }

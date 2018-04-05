@@ -13,9 +13,9 @@ class RestResponse: NetworkResponseProtocol {
     var content: String
     var RawBytes: [UInt8]
     
-    init(status:String, content:String, rawBytes:[UInt8]) {
-        self.statusDescription = status
-        self.content = content
-        self.RawBytes = rawBytes
+    init(response: NetworkResponseProtocol) {
+        self.statusDescription = response.statusDescription
+        self.content = response.content
+        self.RawBytes = response.RawBytes
     }
 }

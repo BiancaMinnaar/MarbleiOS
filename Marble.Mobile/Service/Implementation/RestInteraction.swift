@@ -9,21 +9,28 @@
 import Foundation
 
 class RestInteraction: NetworkInteractionProtocol {
+    var baseConnectionString: String
+    
+    init(baseConnectionString: String) {
+        self.baseConnectionString = baseConnectionString
+    }
+    
+    func constructURL(with urlExtention: String) -> String
+    {
+        return self.baseConnectionString + urlExtention
+    }
+    
     func getNetworkRequest(urlExtension: String, httpMethod: BaseNetworkAccessEnum) -> NetworkRequestProtocol {
         return RestRequest(urlExtention: urlExtension, httpMethodType: httpMethod)
     }
     
-    func getNetworkRequestForJson(urlExtension: String, httpMethod: BaseNetworkAccessEnum) -> NetworkRequestProtocol {
-        return RestRequest(urlExtention: urlExtension, httpMethodType: httpMethod)
-    }
-    
     func executeRequest(request: NetworkRequestProtocol) -> NetworkResponseProtocol {
-//        request("http://mobileexam.dstv.com/login", method:.post, parameters: parameters, encoding: JSONEncoding.default)
-        return RestResponse(status: "", content: "", rawBytes: [UInt8]())
+        request(request.networkExtention, method:request.methodType, parameters:request.parameters, encoding: JSONEncoding.default)
+        
     }
     
-    func executeRequest<A>(responseModel: A, request: NetworkRequestProtocol) -> A.returnModel where A : NetworkResponseWithBodyProtocol {
-        return RestResponseWithBody(status: "", content: "", rawBytes: [UInt8](), body: BaseProjectModel()).body as! A.returnModel
+    func executeRequest<A:NetworkResponseWithBodyProtocol>(responseModel: A, request: NetworkRequestProtocol) -> A.returnModel {
+        return AnyObject as! A.returnModel
     }
     
     

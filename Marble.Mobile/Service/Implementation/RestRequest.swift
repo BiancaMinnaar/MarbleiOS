@@ -10,12 +10,12 @@ import Foundation
 
 class RestRequest: NetworkRequestProtocol {
     var parameters: [NSObject]
-    var networkEextention: String
+    var networkExtention: String
     var methodType: BaseNetworkAccessEnum
     
     init(urlExtention: String, httpMethodType: BaseNetworkAccessEnum) {
         parameters = [NSObject]()
-        self.networkEextention = urlExtention
+        self.networkExtention = urlExtention
         methodType = httpMethodType
     }
     

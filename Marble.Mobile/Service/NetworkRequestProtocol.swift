@@ -9,6 +9,10 @@
 import Foundation
 
 protocol NetworkRequestProtocol {
+    var networkExtention:String {get set}
+    var parameters: [NSObject] {get set}
+    var methodType: BaseNetworkAccessEnum {get set}
+    
     func addParameter(name:String, value: AnyObject)
     func addFile(name:String, value:[UInt8], fileName:String)
     func addHeader(name:String, value:String)

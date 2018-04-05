@@ -9,12 +9,20 @@
 import Foundation
 
 class RestService: RestServiceProtocol {
+    var baseURL: String
+    var interaction: NetworkInteractionProtocol
     var NetworkInteractionSucceeded: ((NetworkCallEventArgs) -> Void)?
     var NetworkInteractionFailed: ((NetworkCallEventArgs) -> Void)?
     var NetworkCallInitialised: (() -> Void)?
     var NetworkCallCompleted: (() -> Void)?
     
+    init(baseUrl: String) {
+        self.baseURL = baseUrl
+        self.interaction = RestInteraction(baseConnectionString: baseUrl)
+    }
+    
     func ExecuteNetworkRequest(urlExtension: String, parameterCollection: Dictionary<String, AnyObject>, networkAccessEnum: BaseNetworkAccessEnum, closure: (() -> Void)?) {
-            
+        var req = self.interaction.getNetworkRequest(urlExtension: urlExtension, httpMethod: networkAccessEnum)
+        self.interaction.executeRequest(request: req);
     }
 }
