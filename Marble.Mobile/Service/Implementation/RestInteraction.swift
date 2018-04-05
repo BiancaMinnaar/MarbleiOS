@@ -25,8 +25,23 @@ class RestInteraction: NetworkInteractionProtocol {
         return RestRequest(urlExtention: urlExtension, httpMethodType: httpMethod)
     }
     
+    func getMethod(networkAccessMethod:BaseNetworkAccessEnum) -> HTTPMethod {
+        switch networkAccessMethod {
+        case .GET:
+            return .get
+        case .POST:
+            return .post
+        case .PUT:
+            return .put
+        }
+    }
+    
     func executeRequest(request: NetworkRequestProtocol) -> NetworkResponseProtocol {
-//        request(request.networkExtention, method:request.methodType, parameters:request.parameters, encoding: JSONEncoding.default)
+        let parms = request.parameters
+        let method = getMethod(networkAccessMethod: request.methodType)
+        Alamofire.request(constructURL(with: request.networkExtention), method:method, parameters:parms, encoding: JSONEncoding.default).responseJSON(completionHandler: ({ (response) in
+            
+        }))
             return AnyObject.self as! NetworkResponseProtocol
     }
     

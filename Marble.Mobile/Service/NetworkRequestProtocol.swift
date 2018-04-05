@@ -10,7 +10,7 @@ import Foundation
 
 protocol NetworkRequestProtocol {
     var networkExtention:String {get set}
-    var parameters: [NSObject] {get set}
+    var parameters: [String: Any] {get set}
     var methodType: BaseNetworkAccessEnum {get set}
     
     func addParameter(name:String, value: AnyObject)
