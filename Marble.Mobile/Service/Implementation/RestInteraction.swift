@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Alamofire
 
 class RestInteraction: NetworkInteractionProtocol {
     var baseConnectionString: String
@@ -25,12 +26,12 @@ class RestInteraction: NetworkInteractionProtocol {
     }
     
     func executeRequest(request: NetworkRequestProtocol) -> NetworkResponseProtocol {
-        request(request.networkExtention, method:request.methodType, parameters:request.parameters, encoding: JSONEncoding.default)
-        
+//        request(request.networkExtention, method:request.methodType, parameters:request.parameters, encoding: JSONEncoding.default)
+            return AnyObject.self as! NetworkResponseProtocol
     }
     
     func executeRequest<A:NetworkResponseWithBodyProtocol>(responseModel: A, request: NetworkRequestProtocol) -> A.returnModel {
-        return AnyObject as! A.returnModel
+        return AnyObject.self as! A.returnModel
     }
     
     
