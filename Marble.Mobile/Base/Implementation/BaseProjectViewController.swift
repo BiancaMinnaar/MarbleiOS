@@ -15,6 +15,6 @@ class BaseProjectViewController
     
     init() {
         _masterRepo = MasterRepository()
-        _network = NetworkIntegrationRepository()
+        _networkRepo = NetworkIntegrationRepository(masterRepo: _masterRepo, restService: RestService(baseUrl: ""))
     }
 }
