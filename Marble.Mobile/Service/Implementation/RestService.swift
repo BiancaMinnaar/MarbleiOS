@@ -22,7 +22,7 @@ class RestService: RestServiceProtocol {
     }
     
     func ExecuteNetworkRequest(urlExtension: String, parameterCollection: Dictionary<String, AnyObject>, networkAccessEnum: BaseNetworkAccessEnum, closure: (() -> Void)?) {
-        var req = self.interaction.getNetworkRequest(urlExtension: urlExtension, httpMethod: networkAccessEnum)
-        self.interaction.executeRequest(request: req);
+        let req = self.interaction.getNetworkRequest(urlExtension: urlExtension, httpMethod: networkAccessEnum)
+        let resp = self.interaction.executeRequest(request: req)
     }
 }

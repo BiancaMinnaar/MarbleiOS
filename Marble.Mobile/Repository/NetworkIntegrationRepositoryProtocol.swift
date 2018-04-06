@@ -14,5 +14,5 @@ protocol NetworkIntegrationRepositoryProtocol {
     var NetworkCallInitialised: (()->Void)? {get set}
     var NetworkCallCompleted: (()->Void)? {get set}
     
-    func ExecuteNetworkRequest(urlExtension:String, parameterCollection:Dictionary<String,AnyObject>, networkAccessEnum:BaseNetworkAccessEnum, closure:(()->Void)?)
+    func ExecuteNetworkRequest(urlExtension:String, parameterCollection:[String: AnyObject], networkAccessEnum:BaseNetworkAccessEnum, closure:(()->Void)?)
 }
