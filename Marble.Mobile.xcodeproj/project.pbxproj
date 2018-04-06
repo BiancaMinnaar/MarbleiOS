@@ -173,11 +173,8 @@
 		5809907A206CF6CD003B5BE2 /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				5809907B206CF6DA003B5BE2 /* Implementation */,
-				5809907C206CF780003B5BE2 /* RestServiceProtocol.swift */,
-				58099085206D11D4003B5BE2 /* NetworkRequestProtocol.swift */,
-				58099087206D122C003B5BE2 /* NetworkInteractionProtocol.swift */,
-				58099089206D1253003B5BE2 /* NetworkResponseProtocol.swift */,
+				580990DC20772872003B5BE2 /* Base */,
+				580990DD20772891003B5BE2 /* Implementation */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -223,6 +220,25 @@
 				580990D820760CBF003B5BE2 /* Alamofire.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		580990DC20772872003B5BE2 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				5809907B206CF6DA003B5BE2 /* Implementation */,
+				5809907C206CF780003B5BE2 /* RestServiceProtocol.swift */,
+				58099085206D11D4003B5BE2 /* NetworkRequestProtocol.swift */,
+				58099087206D122C003B5BE2 /* NetworkInteractionProtocol.swift */,
+				58099089206D1253003B5BE2 /* NetworkResponseProtocol.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		580990DD20772891003B5BE2 /* Implementation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Implementation;
 			sourceTree = "<group>";
 		};
 		588E2E7F206BD41C001C06E4 /* ViewControler */ = {

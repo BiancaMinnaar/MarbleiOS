@@ -11,8 +11,10 @@ import Foundation
 class BaseProjectViewController
 {
     let _masterRepo: MasterRepositoryProtocol
+    let _networkRepo: NetworkIntegrationRepositoryProtocol
     
     init() {
         _masterRepo = MasterRepository()
+        _network = NetworkIntegrationRepository()
     }
 }
