@@ -16,7 +16,6 @@ class NetworkIntegrationRepository: BaseProjectRepository, NetworkIntegrationRep
     private var _RestService: RestServiceProtocol
     
     init(masterRepo: MasterRepositoryProtocol, restService: RestServiceProtocol) {
-        
         _RestService = restService
         super.init(masterRepo: masterRepo)
     }

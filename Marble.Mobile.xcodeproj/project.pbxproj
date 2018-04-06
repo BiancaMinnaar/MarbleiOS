@@ -241,6 +241,23 @@
 			path = Implementation;
 			sourceTree = "<group>";
 		};
+		580990DE20772954003B5BE2 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				588E2E92206C3E28001C06E4 /* NetworkIntegrationRepositoryProtocol.swift */,
+				580990DF20772961003B5BE2 /* Implementation */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		580990DF20772961003B5BE2 /* Implementation */ = {
+			isa = PBXGroup;
+			children = (
+				58099076206CEE3B003B5BE2 /* NetworkIntegrationRepository.swift */,
+			);
+			path = Implementation;
+			sourceTree = "<group>";
+		};
 		588E2E7F206BD41C001C06E4 /* ViewControler */ = {
 			isa = PBXGroup;
 			children = (
@@ -253,9 +270,9 @@
 		588E2E80206BD51B001C06E4 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
+				580990DE20772954003B5BE2 /* Base */,
 				588E2E8E206BF9BE001C06E4 /* MasterRepositoryProtocol.swift */,
 				588E2E8B206BF923001C06E4 /* Implementation */,
-				588E2E92206C3E28001C06E4 /* NetworkIntegrationRepositoryProtocol.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -285,7 +302,6 @@
 			isa = PBXGroup;
 			children = (
 				588E2E8C206BF93E001C06E4 /* MasterRepository.swift */,
-				58099076206CEE3B003B5BE2 /* NetworkIntegrationRepository.swift */,
 			);
 			path = Implementation;
 			sourceTree = "<group>";
