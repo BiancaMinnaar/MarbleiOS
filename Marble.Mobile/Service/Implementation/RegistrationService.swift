@@ -10,7 +10,12 @@ import Foundation
 
 class RegistrationService: RestService, RegistrationServiceProtocol {
     func RegisterUser(userModel: UserViewModel) {
-            
+        var parameters = Dictionary<String, AnyObject>()
+        parameters["username"] = "" as AnyObject
+        
+        ExecuteNetworkRequest(urlExtension: "user/register", parameterCollection: parameters, networkAccessEnum: BaseNetworkAccessEnum.GET) { (responseJ) in
+            let data = responseJ
+        }
     }
     
     

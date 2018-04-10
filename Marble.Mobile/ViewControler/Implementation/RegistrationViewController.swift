@@ -9,6 +9,8 @@
 import Foundation
 
 class RegistrationViewController: RegistrationViewControllerProtocol {
+    @IBAction func RegisterButton(_ sender: Any) {
+    }
     func register(with userDetails: UserViewModel) {
         
     }
