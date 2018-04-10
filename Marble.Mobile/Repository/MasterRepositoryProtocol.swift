@@ -9,6 +9,6 @@
 import Foundation
 
 protocol MasterRepositoryProtocol {
-    
+    func ExecuteNetworkRequest(urlExtension:String, parameterCollection:[String: AnyObject], networkAccessEnum:BaseNetworkAccessEnum, closure:@escaping (([String: AnyObject])->Void))
     func pushHomeView() -> Void
 }

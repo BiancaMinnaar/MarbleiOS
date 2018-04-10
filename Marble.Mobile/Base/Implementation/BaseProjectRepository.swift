@@ -9,9 +9,5 @@
 import Foundation
 
 class BaseProjectRepository {
-    var _MasterRepository: MasterRepositoryProtocol
-    
-    init(masterRepo: MasterRepositoryProtocol) {
-        _MasterRepository = masterRepo
-    }
+    var _MasterRepository = MasterRepository.sharedInstance
 }

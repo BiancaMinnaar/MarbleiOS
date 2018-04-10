@@ -27,6 +27,8 @@
 		580990E320773080003B5BE2 /* RegistrationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580990E220773080003B5BE2 /* RegistrationRepository.swift */; };
 		580990E5207730C8003B5BE2 /* RegistrationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580990E4207730C8003B5BE2 /* RegistrationService.swift */; };
 		580990E720773117003B5BE2 /* RegistrationServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580990E620773117003B5BE2 /* RegistrationServiceProtocol.swift */; };
+		580990F6207CEE1E003B5BE2 /* BaseProjectService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580990F5207CEE1E003B5BE2 /* BaseProjectService.swift */; };
+		580990F7207CF08D003B5BE2 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 580990CC20760CBF003B5BE2 /* Alamofire.framework */; };
 		588E2E83206BD5D0001C06E4 /* BaseProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588E2E82206BD5D0001C06E4 /* BaseProjectViewController.swift */; };
 		588E2E86206BD92B001C06E4 /* BaseProjectViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588E2E85206BD92B001C06E4 /* BaseProjectViewControllerProtocol.swift */; };
 		588E2E88206BD9FA001C06E4 /* BaseProjectModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588E2E87206BD9FA001C06E4 /* BaseProjectModel.swift */; };
@@ -132,6 +134,7 @@
 		580990E220773080003B5BE2 /* RegistrationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationRepository.swift; sourceTree = "<group>"; };
 		580990E4207730C8003B5BE2 /* RegistrationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationService.swift; sourceTree = "<group>"; };
 		580990E620773117003B5BE2 /* RegistrationServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationServiceProtocol.swift; sourceTree = "<group>"; };
+		580990F5207CEE1E003B5BE2 /* BaseProjectService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseProjectService.swift; sourceTree = "<group>"; };
 		588E2E82206BD5D0001C06E4 /* BaseProjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseProjectViewController.swift; sourceTree = "<group>"; };
 		588E2E85206BD92B001C06E4 /* BaseProjectViewControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseProjectViewControllerProtocol.swift; sourceTree = "<group>"; };
 		588E2E87206BD9FA001C06E4 /* BaseProjectModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseProjectModel.swift; sourceTree = "<group>"; };
@@ -157,6 +160,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				580990F7207CF08D003B5BE2 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,6 +200,7 @@
 				5809908D2074BC97003B5BE2 /* RestRequest.swift */,
 				5809908F2074C197003B5BE2 /* RestResponse.swift */,
 				580990912074CD7F003B5BE2 /* RestResponseWithBody.swift */,
+				580990F5207CEE1E003B5BE2 /* BaseProjectService.swift */,
 			);
 			path = Implementation;
 			sourceTree = "<group>";
@@ -540,6 +545,7 @@
 				580990E5207730C8003B5BE2 /* RegistrationService.swift in Sources */,
 				588E2E91206C007C001C06E4 /* BrokenRule.swift in Sources */,
 				58099088206D122C003B5BE2 /* NetworkInteractionProtocol.swift in Sources */,
+				580990F6207CEE1E003B5BE2 /* BaseProjectService.swift in Sources */,
 				58099079206CEED4003B5BE2 /* BaseProjectRepository.swift in Sources */,
 				580990922074CD7F003B5BE2 /* RestResponseWithBody.swift in Sources */,
 				58099080206D0138003B5BE2 /* BaseNetworkAccessEnum.swift in Sources */,

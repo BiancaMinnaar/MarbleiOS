@@ -7,14 +7,9 @@
 //
 
 import Foundation
+import UIKit
 
-class BaseProjectViewController
+class BaseProjectViewController : UIViewController
 {
-    let _masterRepo: MasterRepositoryProtocol
-    let _networkRepo: NetworkIntegrationRepositoryProtocol
     
-    init() {
-        _masterRepo = MasterRepository()
-        _networkRepo = NetworkIntegrationRepository(masterRepo: _masterRepo, restService: RestService(baseUrl: ""))
-    }
 }

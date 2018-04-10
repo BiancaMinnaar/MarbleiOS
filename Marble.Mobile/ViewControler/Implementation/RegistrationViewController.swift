@@ -7,12 +7,21 @@
 //
 
 import Foundation
+import UIKit
 
-class RegistrationViewController: RegistrationViewControllerProtocol {
+class RegistrationViewController: BaseProjectViewController,  RegistrationViewControllerProtocol {
+    var registrationRepo = RegistrationRepository()
+    
     @IBAction func RegisterButton(_ sender: Any) {
-    }
-    func register(with userDetails: UserViewModel) {
+        let user = UserViewModel()
+        user.userName = self.UserName.text!
         
+        register(with: user)
+    }
+    @IBOutlet weak var UserName: UITextField!
+    
+    func register(with userDetails: UserViewModel) {
+        registrationRepo.doRegistration(userModel: userDetails)
     }
     
     

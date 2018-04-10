@@ -15,9 +15,8 @@ class NetworkIntegrationRepository: BaseProjectRepository, NetworkIntegrationRep
     var NetworkInteractionFailed: ((NetworkCallEventArgs) -> Void)?
     private var _RestService: RestServiceProtocol
     
-    init(masterRepo: MasterRepositoryProtocol, restService: RestServiceProtocol) {
+    init(restService: RestServiceProtocol) {
         _RestService = restService
-        super.init(masterRepo: masterRepo)
     }
     
     func ExecuteNetworkRequest(urlExtension: String, parameterCollection: [String: AnyObject], networkAccessEnum: BaseNetworkAccessEnum, closure: @escaping (([String: AnyObject]) -> Void)) {

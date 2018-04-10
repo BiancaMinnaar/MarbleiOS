@@ -9,7 +9,9 @@
 import Foundation
 
 class RegistrationRepository: RegistrationRepositoryProtocol {
-    func doRegistration(userModel: UserViewModel) {
+    var registrationService = RegistrationService()
+    
+    func doRegistration(userModel: UserViewModel) -> Void {
         
     }
     
