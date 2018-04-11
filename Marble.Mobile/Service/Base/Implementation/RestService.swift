@@ -21,9 +21,8 @@ class RestService: RestServiceProtocol {
         self.interaction = RestInteraction(baseConnectionString: baseUrl)
     }
     
-    func ExecuteNetworkRequest(urlExtension: String, parameterCollection: [String: AnyObject], networkAccessEnum: BaseNetworkAccessEnum, closure:(([String: AnyObject]) -> Void)) {
+    func ExecuteNetworkRequest(urlExtension: String, parameterCollection: [String: AnyObject], networkAccessEnum: BaseNetworkAccessEnum, closure:@escaping (([String: AnyObject]) -> Void)) {
         let req = self.interaction.getNetworkRequest(urlExtension: urlExtension, httpMethod: networkAccessEnum)
-        let response = self.interaction.executeRequest(request: req)
-        closure(response.content)
+        self.interaction.executeRequest(request: req, closure: closure)
     }
 }

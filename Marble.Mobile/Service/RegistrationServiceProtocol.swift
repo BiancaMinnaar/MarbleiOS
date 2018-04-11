@@ -9,5 +9,5 @@
 import Foundation
 
 protocol RegistrationServiceProtocol {
-    func RegisterUser(userModel: UserViewModel) -> Void
+    func RegisterUser(userModel: UserViewModel, closure:@escaping (([String : AnyObject]) -> Void)) -> Void
 }

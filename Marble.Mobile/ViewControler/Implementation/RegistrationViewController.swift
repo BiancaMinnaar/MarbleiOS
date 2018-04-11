@@ -21,8 +21,13 @@ class RegistrationViewController: BaseProjectViewController,  RegistrationViewCo
     @IBOutlet weak var UserName: UITextField!
     
     func register(with userDetails: UserViewModel) {
-        registrationRepo.doRegistration(userModel: userDetails)
+        registrationRepo.doRegistration(userModel: userDetails) { (jsonResponse) in
+            self.recieveJson(jsonResponse:jsonResponse)
+        }
     }
     
-    
+    func recieveJson(jsonResponse: [String: AnyObject]) -> Void {
+        //udate frntend
+        var response = jsonResponse
+    }
 }

@@ -8,11 +8,11 @@
 
 import Foundation
 
-class RegistrationRepository: RegistrationRepositoryProtocol {
+class RegistrationRepository: BaseProjectRepository, RegistrationRepositoryProtocol {
     var registrationService = RegistrationService()
     
-    func doRegistration(userModel: UserViewModel) -> Void {
-        
+    func doRegistration(userModel: UserViewModel, closure:@escaping (([String : AnyObject]) -> Void)) -> Void {
+        registrationService.RegisterUser(userModel: userModel, closure: closure)
     }
     
     

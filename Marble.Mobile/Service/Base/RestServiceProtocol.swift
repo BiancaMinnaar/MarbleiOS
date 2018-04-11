@@ -14,5 +14,5 @@ protocol RestServiceProtocol {
     var NetworkCallInitialised: (()->Void)? {get set}
     var NetworkCallCompleted: (()->Void)? {get set}
     
-    func ExecuteNetworkRequest(urlExtension:String, parameterCollection:[String: AnyObject], networkAccessEnum:BaseNetworkAccessEnum, closure:(([String: AnyObject])->Void))
+    func ExecuteNetworkRequest(urlExtension:String, parameterCollection:[String: AnyObject], networkAccessEnum:BaseNetworkAccessEnum, closure:@escaping (([String: AnyObject])->Void))
 }

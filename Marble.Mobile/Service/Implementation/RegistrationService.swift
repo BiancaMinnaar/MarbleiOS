@@ -9,13 +9,11 @@
 import Foundation
 
 class RegistrationService: BaseProjectService, RegistrationServiceProtocol {
-    func RegisterUser(userModel: UserViewModel) {
+    func RegisterUser(userModel: UserViewModel, closure: @escaping (([String : AnyObject]) -> Void)) {
         var parameters = Dictionary<String, AnyObject>()
         parameters["username"] = userModel.userName as AnyObject
         
-        MasterRepository.sharedInstance.ExecuteNetworkRequest(urlExtension: "register", parameterCollection: parameters, networkAccessEnum: BaseNetworkAccessEnum.GET) { (responseJ) in
-            let data = responseJ
-        }
+    MasterRepository.shared().ExecuteNetworkRequest(urlExtension: "register", parameterCollection: parameters, networkAccessEnum: BaseNetworkAccessEnum.POST, closure:closure)
     }
     
     

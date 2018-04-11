@@ -9,5 +9,5 @@
 import Foundation
 
 class BaseProjectRepository {
-    var _MasterRepository = MasterRepository.sharedInstance
+    var _MasterRepository = MasterRepository.shared()
 }

@@ -9,15 +9,24 @@
 import Foundation
 
 class MasterRepository: MasterRepositoryProtocol {
-    let networkIntegration: NetworkIntegrationRepositoryProtocol
+    //let networkIntegration: NetworkIntegrationRepositoryProtocol
     
-    static let sharedInstance = MasterRepository()
+    private static var sharedInstance: MasterRepository = {
+        let instance = MasterRepository()
+        
+        return instance
+    }()
     
     private init() {
-        networkIntegration = NetworkIntegrationRepository(restService: RestService(baseUrl: "http://localhost:8080/api/"))
+        //self.networkIntegration = NetworkIntegrationRepository(restService: RestService(baseUrl: "http://localhost:8080/api/"))
+    }
+    
+    class func shared() -> MasterRepository {
+        return sharedInstance
     }
     
     func ExecuteNetworkRequest(urlExtension: String, parameterCollection: [String : AnyObject], networkAccessEnum: BaseNetworkAccessEnum, closure: @escaping (([String : AnyObject]) -> Void)) {
+        var networkIntegration = NetworkIntegrationRepository(restService: RestService(baseUrl: "http://localhost:8080/api/"))
         networkIntegration.ExecuteNetworkRequest(urlExtension: urlExtension, parameterCollection: parameterCollection, networkAccessEnum: networkAccessEnum, closure: closure)
     }
     

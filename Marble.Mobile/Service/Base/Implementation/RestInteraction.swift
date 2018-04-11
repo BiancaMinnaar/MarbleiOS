@@ -36,10 +36,10 @@ class RestInteraction: NetworkInteractionProtocol {
         }
     }
     
-    func executeRequest(request: NetworkRequestProtocol) -> NetworkResponseProtocol {
+    func executeRequest(request: NetworkRequestProtocol, closure:@escaping (([String : AnyObject]) -> Void)) -> Void {
         let parms = request.parameters
         let method = getMethod(networkAccessMethod: request.methodType)
-        var rResponse: NetworkResponseProtocol = AnyObject.self as! NetworkResponseProtocol
+        var rResponse: NetworkResponseProtocol?
         Alamofire.request(constructURL(with: request.networkExtention), method:method, parameters:parms, encoding: JSONEncoding.default).responseJSON(completionHandler: ({ (response) in
             guard response.result.isSuccess else {
                 print("Network Error: \(String(describing: response.result.error))")
@@ -55,12 +55,12 @@ class RestInteraction: NetworkInteractionProtocol {
             
             //let userDate = UserLoginResult(withJSONData: userJSON as AnyObject )
             rResponse = RestResponse(status: "Success", content: jsonString)
+            closure(rResponse!.content)
         }))
-        return rResponse
     }
     
-    func executeRequest<A:NetworkResponseWithBodyProtocol>(responseModel: A, request: NetworkRequestProtocol) -> A.returnModel {
-        return AnyObject.self as! A.returnModel
+    func executeRequest<A:NetworkResponseWithBodyProtocol>(responseModel: A, request: NetworkRequestProtocol, closure:@escaping (([String : AnyObject]) -> Void)) -> Void {
+        
     }
     
     
