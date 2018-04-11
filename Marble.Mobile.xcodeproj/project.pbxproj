@@ -186,8 +186,8 @@
 			isa = PBXGroup;
 			children = (
 				580990DC20772872003B5BE2 /* Base */,
-				580990DD20772891003B5BE2 /* Implementation */,
 				580990E620773117003B5BE2 /* RegistrationServiceProtocol.swift */,
+				580990DD20772891003B5BE2 /* Implementation */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -276,8 +276,8 @@
 		588E2E7F206BD41C001C06E4 /* ViewControler */ = {
 			isa = PBXGroup;
 			children = (
-				5809906D206CD326003B5BE2 /* Implementation */,
 				5809906E206CD401003B5BE2 /* RegistrationViewControllerProtocol.swift */,
+				5809906D206CD326003B5BE2 /* Implementation */,
 			);
 			path = ViewControler;
 			sourceTree = "<group>";
@@ -285,8 +285,8 @@
 		588E2E80206BD51B001C06E4 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
-				580990E020772FCE003B5BE2 /* RegistrationRepositoryProtocol.swift */,
 				580990DE20772954003B5BE2 /* Base */,
+				580990E020772FCE003B5BE2 /* RegistrationRepositoryProtocol.swift */,
 				588E2E8E206BF9BE001C06E4 /* MasterRepositoryProtocol.swift */,
 				588E2E8B206BF923001C06E4 /* Implementation */,
 			);
